@@ -59,6 +59,7 @@ Route::get('/listrevisi', function(){
   return view('inovator.listrevisi');
 });
 Route::resource('resetpassword','ResetpasswordController');
+Route::get('print/{id}','PrintController@printInovasi');
 
 // Route::get('inovasi/print', 'InovasiController@print');
 // Route::get('print/{id}', 'PrintController@printInovasi');

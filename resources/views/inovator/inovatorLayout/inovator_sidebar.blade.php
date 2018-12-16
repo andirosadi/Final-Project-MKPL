@@ -9,7 +9,6 @@
                     <ul aria-expanded="false" class="collapse  first-level">
                         <li class="sidebar-item"><a href="{{url('c_inovasi')}}" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu">Create Inovation</span></a></li>
                         <li class="sidebar-item"><a href="{{route('inovasi.index')}}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">List Inovation</span></a></li>
-                        <li class="sidebar-item"><a href="{{url('listrevisi')}}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Revision</span></a></li>
                     </ul>
                 </li>
             </ul>

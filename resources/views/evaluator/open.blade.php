@@ -104,6 +104,7 @@
                         </div>
                         <div class="card-body">
                           <a href="{{route('evaluators.edit', $inovasis->id)}}"  class="btn btn-warning btn-sm">Tambah Revisi</a>
+                          <a href="{{url('print', $inovasis->id)}}"  class="btn btn-warning btn-sm">Print</a>
                         </div>
                             @endforeach
 

@@ -20,8 +20,8 @@
                         <div class="card card-hover">
                             <div class="box bg-cyan text-center">
                                 <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
-                                <h6 class="text-white">Total Inovasi</h6>
-                                <h6 class="text-white">5</h6>
+                                <h6 class="text-white">Inovasi</h6>
+                                <h6 class="text-white"></h6>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                             <div class="box bg-success text-center">
                                 <h1 class="font-light text-white"><i class="mdi mdi-chart-areaspline"></i></h1>
                                 <h6 class="text-white">Approved</h6>
-                                <h6 class="text-white">1</h6>
+                                <h6 class="text-white"></h6>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                             <div class="box bg-warning text-center">
                                 <h1 class="font-light text-white"><i class="mdi mdi-collage"></i></h1>
                                 <h6 class="text-white">Revision</h6>
-                                <h6 class="text-white">4</h6>
+                                <h6 class="text-white"></h6>
                             </div>
                         </div>
                     </div>

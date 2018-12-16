@@ -49,30 +49,35 @@
                             <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->ruanglingkup}}</h5>
                             <br>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>Metodologi</b></h5>
-                            <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->metodologi}}</h5>
+                            <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->metodelogi}}</h5>
                             <br>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>Landasan Teori</b></h5>
                             <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->landasant}}</h5>
                             <br>
+                            <div class="page-break"></div>
                             <h5 style="font-size:16px; text-align:center;" class="card-title m-b-0"><b>PEMBAHASAN</b></h5>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>RPCS Permasalahan</b></h5>
-                            <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->metodologi}}</h5>
+                            <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->rpcs}}</h5>
                             <br>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>Idea Generation</b></h5>
                             <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->idea}}</h5>
                             <br>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>Table Idea Generation</b></h5>
-                            <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0"><img src="{{$inovasis->tidea}}" alt=""></h5>
+                            <img src="{{$inovasis->tidea}}"/>
+                            <br>
                             <br>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>Table Prioritas</b></h5>
-                            <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0"><img src="{{$inovasis->tprio}}" alt=""></h5>
+                            <img src="{{$inovasis->tprio}}"/>
+                            <br>
                             <br>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>Matrix Prioritas</b></h5>
-                            <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0"><img src="{{$inovasis->mprio}}" alt=""></h5>
+                            <img src="{{$inovasis->mprio}}"/>
+                            <br>
                             <br>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>Pelaksanaan Project</b></h5>
                             <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->pelaksanaan}}</h5>
                             <br>
+                            <div class="page-break"></div>
                             <h5 style="font-size:16px; text-align:center;" class="card-title m-b-0"><b>MANFAAT DAN ANALISA RESIKO</b></h5>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>Manfaat Finansial</b></h5>
                             <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->manfaatf}}</h5>
@@ -87,7 +92,9 @@
                             <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->pelaksanaan}}</h5>
                             <br>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>Matrix Prioritas</b></h5>
-                            <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0"><img src="{{$inovasis->tprio}}" alt=""></h5>
+                            <img src="{{$inovasis->tprio}}"/>
+                            <br>
+                            <div class="page-break"></div>
                             <h5 style="font-size:16px; text-align:center;" class="card-title m-b-0"><b>KESIMPULAN DAN SARAN</b></h5>
                             <h5 style="font-size:16px; text-align:left;" class="card-title m-b-0"><b>Kesimpulan</b></h5>
                             <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->kesimpulan}}</h5>
@@ -96,7 +103,7 @@
                             <h5 style="font-size:16px; text-align:justify; text-justify:inter-word;" class="card-title m-b-0">{{$inovasis->saran}}</h5>
                         </div>
                         <div class="card-body">
-                          <a href=""  class="btn btn-warning btn-sm">Print</a>
+                          <a href="{{url('print', $inovasis->id)}}" class="btn btn-warning btn-sm">Print</a>
                         </div>
                             @endforeach
 
@@ -111,6 +118,8 @@
     <!-- ============================================================== -->
     <!-- START SCRIPTS -->
         <!-- START PLUGINS -->
+        <script src="{{asset('js/print.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/jquery.printPage.js')}}"></script>
         <script type="text/javascript" src="{{asset('joli/js/plugins/jquery/jquery.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('joli/js/plugins/jquery/jquery-ui.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('joli/js/plugins/bootstrap/bootstrap.min.js')}}"></script>
@@ -128,6 +137,12 @@
 
         <script type="text/javascript" src="{{asset('joli/js/plugins.js')}}"></script>
         <script type="text/javascript" src="{{asset('joli/js/actions.js')}}"></script>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('.btnprn').printPage();
+          });
+      </script>
         <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->
     <!-- ============================================================== -->
